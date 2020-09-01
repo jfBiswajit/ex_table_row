@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>dynamic table row</title>
+</head>
+<body>
+  <button id="btnAddRow" type="button">
+    Add Row
+  </button>
+  <button id="btnDelLastRow" type="button">
+    Delete Last Row
+  </button>
+  <button id="btnDelCheckRow" type="button">
+    Delete Checked Row
+  </button>
+  <table id="tblAddRow" border="1">
+    <thead>
+      <tr>
+        <th><input type="checkbox" id="checkedAll" /></th>
+        <th>Name</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input name="ckcDel[]" type="checkbox" />
+        </td>
+        <td>
+          <input name="txtName[]" value="123" />
+        </td>
+        <td>
+          <input name="txtCity[]" value="123456" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input name="ckcDel[]" type="checkbox" />
+        </td>
+        <td>
+          <input name="txtName[]" value="123aaa" />
+        </td>
+        <td>
+          <input name="txtCity[]" value="123456aaa" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<script src="app.js"></script>
+</body>
+</html>
